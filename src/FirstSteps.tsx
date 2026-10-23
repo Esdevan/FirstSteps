@@ -32,8 +32,9 @@ export function FirstSteps() {
       <section
         style={{
           display: "flex",
-          padding: 10,
+
           flexDirection: "column",
+          padding: 10,
           gap: 20,
         }}
       >
@@ -42,7 +43,9 @@ export function FirstSteps() {
           quantity={firstElement.quantity}
         /> */}
 
-        <ItemCounter {...firstElement} />
+        {itemsInCart.map((item) => (
+          <ItemCounter key={item.name} {...item} />
+        ))}
       </section>
     </>
   );
