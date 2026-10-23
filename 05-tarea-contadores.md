@@ -18,4 +18,7 @@
 -
 - CounterView debe ser agregado a App
 - y los 2 CounterClick deben ser agregados en CounterView
+
+- Se debe comentar los demas componentes (FirstSteps & ItemCounter)
+
 - \*/
