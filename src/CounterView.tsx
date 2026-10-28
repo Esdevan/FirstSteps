@@ -3,17 +3,18 @@ import CounterClick from "./CounterClick";
 const CounterView = () => {
   return (
     <div>
-      <h3>contadores</h3>
+      <h3>Contadores</h3>
 
       <div
         style={{
           display: "flex",
+          flexDirection: "column",
           gap: "16px",
-          alignItems: "column",
+          alignItems: "flex-start",
         }}
       >
-        <CounterClick />
-        <CounterClick />
+        <CounterClick label="Contador 1" />
+        <CounterClick label="Contador 2" />
       </div>
     </div>
   );

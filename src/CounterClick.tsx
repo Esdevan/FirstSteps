@@ -1,11 +1,11 @@
 import { useState } from "react";
 
-function CounterClick() {
+function CounterClick({ label }: { label: string }) {
   const [clicks, setClicks] = useState(0);
 
   return (
     <button onClick={() => setClicks((clicAnteriores) => clicAnteriores + 1)}>
-      Clicks: {clicks}
+      {label}: {clicks}
     </button>
   );
 }
